@@ -17,8 +17,12 @@
     "content_scripts":[
         {
             "matches":["<all_urls>"],
-            "js":["background.js"]
+            "js":["content.js"]
         }
-    ]
+    ],
+    "background":{
+        "scripts":["background.js"]
+    },
+    "permissions" : ["activeTab"]
 
 }
