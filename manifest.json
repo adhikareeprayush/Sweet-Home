@@ -1,27 +1,25 @@
 {
-    "manifest_version": 2,
+    "manifest_version": 3,
     "name": "Sweet Home",
     "version": "1.0",
     "description": "This extension will make your home page more beautiful.",
-    "browser_action":{
-        "default_icons":{
-            "16":"images/icon16.png",
-            "32":"images/icon32.png",
-            "48":"images/icon48.png",
-            "128":"images/icon128.png"
-        
-        },
-        "default_popup":"popup.html"
+    "host_permissions": ["<all_urls>"],
+    "action": {
+      "default_icons": {
+        "16": "images/icon16.png",
+        "32": "images/icon32.png",
+        "48": "images/icon48.png",
+        "128": "images/icon128.png"
+      },
+      "default_popup": "popup.html"
     },
-    "content_scripts":[
-        {
-            "matches":["<all_urls>"],
-            "js":["content.js"]
-        }
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": ["content.js"]
+      }
     ],
-    "background":{
-        "scripts":["background.js"]
-    },
-    "permissions" : ["activeTab","storage"]
-
-}
+    "background": {
+      "service_worker" : "background.js"
+    }
+  }
