@@ -3,7 +3,6 @@
     "name": "Sweet Home",
     "version": "1.0",
     "description": "This extension will make your home page more beautiful.",
-    "permission":["storage"],
     "browser_action":{
         "default_icons":{
             "16":"images/icon16.png",
@@ -23,6 +22,6 @@
     "background":{
         "scripts":["background.js"]
     },
-    "permissions" : ["activeTab"]
+    "permissions" : ["activeTab","storage"]
 
 }
