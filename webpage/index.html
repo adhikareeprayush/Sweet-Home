@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../lib/jquery.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>QuoteMe</title>
+</head>
+
+<body>
+    <div id="blurryBack"></div>
+    <div class="dateTime">
+        <div class="time">
+            <h1 id="time">06:58</h1>
+        </div>
+        <div class="date">
+            <h5 id="date">Monday, 21st September 2020</h5>
+        </div>
+    </div>
+    <div class="greetings">
+        <h2><span id="timeGreeting"></span>, Prayush</h2>
+    </div>
+    <div class="weather">
+        <div class="desc">
+            <p id="weather_desc">Partly Cloudy, It is currently 27 with a high of 39 today.</p>
+        </div>
+        <div class="icon">
+            <img id="weather-icon" src="images/cloudy.png" alt="cloudy">
+            <p id="temp"></p>
+        </div>
+    </div>
+    <div class="searchbar">
+        <form id="google_search_form">
+            <input type="text" placeholder="Search Google" id="google_search_input">
+            <input type="submit" value="Search" id="google_search_button">
+        </form>
+    </div>
+    <div class="favourites">
+        <a class="fav1" href="https://www.linkedin.com/in/prayushadhikari/">
+            <img src="linkedin.svg" alt="linkedin">
+        </a>
+        <a class="fav1" href="https://github.com/adhikareeprayush">
+            <img src="github.svg" alt="github">
+        </a>
+        <a class="fav1" href="https://twitter.com/Aprayush">
+            <img src="twitter.svg" alt="twitter">
+        </a>
+        <a class="fav1" href="https://www.facebook.com/APrayush/">
+            <img src="fb.svg" alt="facebook">
+        </a>
+    </div>
+
+    <div class="quote">
+        <p id="quote">“The only way to do great work is to love what you do.”</p>
+        <p id="author">Inspiron Bot</p>
+    </div>
+    <div class="unsplash-creator-name" id="unsplash-author">
+        Prayush, Adhikari
+    </div>
+
+
+    <script src="scripts.js"></script>
+
+    <script>
+        let google_search_form = document.getElementById('google_search_form');
+        let google_search_input = document.getElementById('google_search_input');
+        google_search_form.addEventListener('submit', (e) => {
+            e.preventDefault();
+            let search_query = google_search_input.value;
+            if (search_query === '') return;
+            window.open(`https://www.google.com/search?q=${search_query}`, '_blank');
+        });
+    </script>
+</body>
+
+</html>
