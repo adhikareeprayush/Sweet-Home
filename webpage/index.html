@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="../lib/jquery.js"></script>
     <link rel="stylesheet" href="style.css">
-    <title>QuoteMe</title>
+    <title>Sweet Home</title>
 </head>
 
 <body>
@@ -63,16 +63,7 @@
 
     <script src="scripts.js"></script>
 
-    <script>
-        let google_search_form = document.getElementById('google_search_form');
-        let google_search_input = document.getElementById('google_search_input');
-        google_search_form.addEventListener('submit', (e) => {
-            e.preventDefault();
-            let search_query = google_search_input.value;
-            if (search_query === '') return;
-            window.open(`https://www.google.com/search?q=${search_query}`, '_blank');
-        });
-    </script>
+
 </body>
 
 </html>

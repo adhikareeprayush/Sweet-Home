@@ -1,5 +1,4 @@
 let background = document.getElementById('blurryBack');
-
 function loadImg() {
     // Construct the API URL with the random image endpoint, category query, and your access key
     const url = `https://api.unsplash.com/photos/random?query=landscape&client_id=gZb-BQbX2-TtxlCJ_jDzH-78EZN-cb8mvSrS9LmWQr8`;
@@ -13,9 +12,6 @@ function loadImg() {
             background.style.backgroundImage = `url(${data.urls.regular})`;
         });
 }
-
-window.addEventListener('load', greeting(), loadImg, getTime_date(), getQuote());
-
 
 function getTime_date() {
     let date = new Date();
@@ -57,7 +53,6 @@ function greeting() {
     const timeGreeting = document.getElementById('timeGreeting');
     timeGreeting.innerHTML = greeting.innerHTML;
 }
-
 
 function getQuote() {
     const category = 'happiness';
@@ -117,3 +112,14 @@ if ('geolocation' in navigator) {
         findWeather(latitude, longitude);
     });
 }
+
+let google_search_form = document.getElementById('google_search_form');
+let google_search_input = document.getElementById('google_search_input');
+google_search_form.addEventListener('submit', (e) => {
+    e.preventDefault();
+    let search_query = google_search_input.value;
+    if (search_query === '') return;
+    window.open(`https://www.google.com/search?q=${search_query}`, '_blank');
+});
+
+window.addEventListener('load', greeting(), loadImg(), getTime_date(), getQuote());
