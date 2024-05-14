@@ -60,8 +60,48 @@
         Prayush, Adhikari
     </div>
 
+    <div id="settings">
+        <img src="icons/gear-svgrepo-com.svg" alt="settings">
+    </div>
+
+    <div id="settings_menu">
+        <div class="settings_header">
+            <h2>Settings</h2>
+            <img src="icons/close.svg" alt="close">
+        </div>
+        <div class="settings_item">
+            <form action="">
+                <label for="name">Name</label>
+                <input type="text" id="name" placeholder="Enter your name">
+                <button type="submit">Save</button>
+            </form>
+        </div>
+    </div>
+
+
+    <!-- Enter your name -->
+
+
 
     <script src="scripts.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $("#settings").click(function () {
+                $("#settings_menu").css("display", "block");
+            });
+
+            $(".settings_header img").click(function () {
+                $("#settings_menu").css("display", "none");
+            });
+
+            $("#name").val(localStorage.getItem("name"));
+
+            $("#name").change(function () {
+                localStorage.setItem("name", $("#name").val());
+            });
+        });
+    </script>
 
 
 </body>

@@ -186,3 +186,39 @@ p {
 .quote:hover #author {
   opacity: 1;
 }
+
+#settings {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+}
+
+#settings:hover img {
+  transition: all 0.3s;
+  display: block;
+}
+
+#settings img {
+  width: 50px;
+  height: 50px;
+  display: none;
+  filter: brightness(0.6) invert(1);
+}
+
+#settings img:hover {
+  filter: brightness(0.4) invert(1);
+}
+
+#settings_menu {
+  display: none;
+  position: absolute;
+  bottom: 70px;
+  right: 10px;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 10px;
+  padding: 10px;
+  gap: 10px;
+}
