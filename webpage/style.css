@@ -222,3 +222,38 @@ p {
   padding: 10px;
   gap: 10px;
 }
+
+.close-icon {
+  position: absolute;
+  top: 5px; /* Adjust position as needed */
+  right: 5px; /* Adjust position as needed */
+  width: 20px; /* Adjust the width to make it smaller */
+  height: 20px; /* Adjust the height to make it smaller */
+  cursor: pointer; /* Change cursor to pointer for better UX */
+}
+
+.settings_item {
+  margin-top: 10px;
+}
+
+.settings_item label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.settings_item input {
+  width: calc(100% - 20px);
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.settings_item button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #00aaff;
+  color: white;
+  cursor: pointer;
+}
