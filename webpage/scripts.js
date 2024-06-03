@@ -33,7 +33,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Load random background image from Unsplash
     function loadImg() {
-        const url = `https://api.unsplash.com/photos/random?query=landscape&client_id=gZb-BQbX2-TtxlCJ_jDzH-78EZN-cb8mvSrS9LmWQr8`;
+        const unsplashKey = 'YOUR_UNSPLASH_KEY'; // This will be replaced
+        const url = `https://api.unsplash.com/photos/random?query=landscape&client_id=${unsplashKey}`;
         fetch(url)
             .then(response => response.json())
             .then(data => {
@@ -89,11 +90,12 @@ document.addEventListener('DOMContentLoaded', () => {
         const category = 'happiness';
         const quoteElement = document.getElementById('quote');
         const authorElement = document.getElementById('author');
+        const apiNinjaKey = 'YOUR_API_NINJA_KEY'; // This will be replaced
 
         $.ajax({
             method: 'GET',
             url: 'https://api.api-ninjas.com/v1/quotes?category=' + category,
-            headers: { 'X-Api-Key': 'R4mo+DRatvAxk/0Y42v3jw==GkmawomWvA4ARIKl' },
+            headers: { 'X-Api-Key': apiNinjaKey },
             contentType: 'application/json',
             success: function (result) {
                 if (result && result.length > 0) {
@@ -117,7 +119,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Fetch current weather based on geolocation
     function findWeather(latitude, longitude) {
-        const url = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=d6276de27faacc658b8d1d898f7ed3d0`;
+        const openWeatherKey = 'YOUR_OPENWEATHER_KEY'; // This will be replaced
+        const url = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${openWeatherKey}`;
         fetch(url)
             .then(response => response.json())
             .then(data => {
