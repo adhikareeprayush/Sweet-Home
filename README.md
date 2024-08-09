@@ -13,18 +13,20 @@ Before installation, ensure you have:
    - Click on the green **Code** button, then select **Download ZIP**. 
       <br><img src="https://imgur.com/9WpNiZq.png" alt="Click code" width="350" style="display: inline; margin-right: 10px;"/> <img src="https://imgur.com/HbkPWYU.png" alt="Unzip" width="350" style="display: inline;"/>
 
-2. **Install the Extension in Chrome**:
+2. **Install the Extension in Chrome & getting started**:
    - Open Google Chrome.
    - Type `chrome://extensions` in the address bar and press Enter. <br><img src="https://imgur.com/myLsSU3.png" alt="Type in Chrome Extensions" width="450"/>
    - Enable the **Developer mode** toggle at the top right corner. <br>![Developer Mode](https://imgur.com/9H9jTTM.png)
    - Click on **Load unpacked** and select the unzipped folder of the downloaded extension files. 
       <br><img src="https://imgur.com/xzAgRju.png" alt="Click Load Unpacked" width="700"/>
       <br><img src="https://imgur.com/zj24oG5.png" alt="Select Folder" width="700"/>
-      
+   - Open a new tab, hover to bottom right of your screen, and click on the settings icon. <br><img src="https://imgur.com/oUhvm2S.png" alt="Type in Chrome Extensions" width="700"/>
+   - Type in your name and press **Save**. <br><img src="https://imgur.com/oN2EZSi.png" alt="Type in Chrome Extensions" width="700"/>
+   - Confirm by clicking **OK** and it will save your name locally. <br><img src="https://imgur.com/9Cks5VA.png" alt="Type in Chrome Extensions" width="700"/>
 
 ## 🚀 Usage
 
-After installation, every new tab or window you open in Chrome will display the Sweet Home default page. Enjoy your new browsing experience! <br>![Open New Tab](https://imgur.com/xNAMssw.png)
+After installation, every new tab or window you open in Chrome will display the Sweet Home default page with your name. Enjoy your new browsing experience! <br>![Open New Tab](https://imgur.com/xNAMssw.png)
 
 ## Pausing the Extension
 

@@ -1,14 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="../lib/jquery.js"></script>
     <link rel="stylesheet" href="style.css">
     <title>Sweet Home</title>
 </head>
-
 <body>
     <div id="blurryBack"></div>
     <div class="dateTime">
@@ -20,7 +17,7 @@
         </div>
     </div>
     <div class="greetings">
-        <h2><span id="timeGreeting"></span>, Prayush</h2>
+        <h2><span id="timeGreeting"></span>, <span id="userName">User</span></h2>
     </div>
     <div class="weather">
         <div class="desc">
@@ -66,44 +63,19 @@
 
     <div id="settings_menu">
         <div class="settings_header">
+            <img src="icons/close.svg" alt="close" class="close-icon">
             <h2>Settings</h2>
-            <img src="icons/close.svg" alt="close">
         </div>
         <div class="settings_item">
-            <form action="">
-                <label for="name">Name</label>
+            <form id="nameForm">
+                <label for="name">Name:</label>
                 <input type="text" id="name" placeholder="Enter your name">
                 <button type="submit">Save</button>
             </form>
         </div>
     </div>
 
-
-    <!-- Enter your name -->
-
-
-
-    <script src="scripts.js"></script>
-
-    <script>
-        $(document).ready(function () {
-            $("#settings").click(function () {
-                $("#settings_menu").css("display", "block");
-            });
-
-            $(".settings_header img").click(function () {
-                $("#settings_menu").css("display", "none");
-            });
-
-            $("#name").val(localStorage.getItem("name"));
-
-            $("#name").change(function () {
-                localStorage.setItem("name", $("#name").val());
-            });
-        });
-    </script>
-
-
+    <script src="../lib/jquery.js"></script>
+    <script src="scripts.js" defer></script>
 </body>
-
 </html>

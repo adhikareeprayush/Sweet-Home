@@ -3,6 +3,7 @@
   "name": "Sweet Home",
   "version": "1.0",
   "description": "This extension will make your home page more beautiful.",
+  "permissions": ["storage"],
   "host_permissions": ["<all_urls>"],
   "action": {
     "default_popup": "popup.html",
